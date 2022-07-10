@@ -1,4 +1,4 @@
-package com.enki.domain.service.port.output;
+package com.enki.domain.service.port.output.repository;
 
 import com.enki.domain.core.entity.BoardGame;
 

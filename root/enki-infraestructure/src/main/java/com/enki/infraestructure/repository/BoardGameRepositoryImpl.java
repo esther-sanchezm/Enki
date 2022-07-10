@@ -1,6 +1,6 @@
-package com.enki.infraestructure;
+package com.enki.infraestructure.repository;
 
-import com.enki.domain.service.port.output.BoardGameRepository;
+import com.enki.domain.service.port.output.repository.BoardGameRepository;
 import com.enki.domain.core.entity.BoardGame;
 import java.util.Optional;
 
