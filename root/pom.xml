@@ -17,6 +17,7 @@
 	<packaging>pom</packaging>
 
 	<modules>
+		<module>enki-common</module>
 		<module>enki-boot</module>
 		<module>enki-domain</module>
 		<module>enki-infraestructure</module>
@@ -25,41 +26,54 @@
 
 	<properties>
 		<java.version>17</java.version>
-		<org.projectlombok.lombok.version>1.18.10</org.projectlombok.lombok.version>
 		<org.mapstruct.mapstruct.version>1.4.2.Final</org.mapstruct.mapstruct.version>
+		<org.projectlombok.lombok.version>1.18.10</org.projectlombok.lombok.version>
+		<spring-boot.version>2.5.3</spring-boot.version>
 	</properties>
 
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
 				<groupId>enki</groupId>
+				<artifactId>enki-common</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>enki</groupId>
 				<artifactId>enki-boot</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
+				<version>${project.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>enki</groupId>
 				<artifactId>enki-domain</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
+				<version>${project.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>enki</groupId>
 				<artifactId>enki-infraestructure</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
+				<version>${project.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>enki</groupId>
 				<artifactId>enki-application</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
+				<version>${project.version}</version>
 			</dependency>
 
+			<!-- Spring boot -->
 			<dependency>
 				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-starter-web</artifactId>
+				<artifactId>spring-boot-starter</artifactId>
+				<version>${spring-boot.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.projectlombok</groupId>
 				<artifactId>lombok</artifactId>
-				<optional>true</optional>
+				<scope>provided</scope>
+				<version>${org.projectlombok.lombok.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-web</artifactId>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.boot</groupId>
@@ -75,14 +89,8 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
+					<release>11</release>
 					<annotationProcessorPaths>
-						<path>
-							<groupId>org.mapstruct</groupId>
-							<artifactId>mapstruct-processor</artifactId>
-							<version>${org.mapstruct.mapstruct.version}</version>
-						</path>
 						<path>
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok</artifactId>

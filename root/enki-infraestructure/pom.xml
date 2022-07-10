@@ -10,9 +10,13 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>enki</groupId>
     <artifactId>enki-infraestructure</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
 
+    <dependencies>
+        <dependency>
+            <groupId>enki</groupId>
+            <artifactId>enki-domain</artifactId>
+        </dependency>
+    </dependencies>
     
 </project>
