@@ -1,4 +1,4 @@
-package com.enki.domain.core.entity;
+package com.enki.domain.core.valueobject;
 
 public enum BoardGameStatus {
     ACTIVE, INACTIVE;

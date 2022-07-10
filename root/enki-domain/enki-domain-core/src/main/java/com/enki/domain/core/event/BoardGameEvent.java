@@ -1,6 +1,5 @@
 package com.enki.domain.core.event;
 
-import com.enki.common.aggregationroot.AggregationRoot;
 import com.enki.common.event.ActionDomain;
 import com.enki.common.event.DomainEvent;
 import com.enki.domain.core.entity.BoardGame;
