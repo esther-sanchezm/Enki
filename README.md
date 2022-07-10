@@ -1,5 +1,5 @@
 # Enki - Hexagonal arquitecture 
-This is a experimental proyect to test some features of hexagonal arquitecture with a simple domain of ``board game``. 
+This is a experimental project to test some features of hexagonal arquitecture with a simple domain of ``board game``. 
 At this moment it has three modules:
 - ``Application``: with only a use case createBoardGameCommandHandler.
 - ``Domain``: core of business logic.
