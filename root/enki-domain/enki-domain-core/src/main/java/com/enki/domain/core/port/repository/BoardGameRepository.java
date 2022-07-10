@@ -1,6 +1,6 @@
-package com.enki.domain.port.repository;
+package com.enki.domain.core.port.repository;
 
-import com.enki.domain.entity.BoardGame;
+import com.enki.domain.core.entity.BoardGame;
 
 import java.util.List;
 

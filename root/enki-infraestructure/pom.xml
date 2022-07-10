@@ -15,7 +15,11 @@
     <dependencies>
         <dependency>
             <groupId>enki</groupId>
-            <artifactId>enki-domain</artifactId>
+            <artifactId>enki-domain-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>enki</groupId>
+            <artifactId>enki-domain-service</artifactId>
         </dependency>
     </dependencies>
     

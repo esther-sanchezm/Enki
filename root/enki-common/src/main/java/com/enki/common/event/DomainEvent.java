@@ -10,7 +10,7 @@ import java.time.ZonedDateTime;
 @AllArgsConstructor
 public abstract class DomainEvent<T extends AggregationRoot> {
 
-    private AggregationRoot entity;
+    private T entity;
 
     private ActionDomain action;
 

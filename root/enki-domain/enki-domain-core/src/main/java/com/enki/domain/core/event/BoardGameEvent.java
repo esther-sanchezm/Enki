@@ -1,9 +1,9 @@
-package com.enki.domain.event;
+package com.enki.domain.core.event;
 
 import com.enki.common.aggregationroot.AggregationRoot;
 import com.enki.common.event.ActionDomain;
 import com.enki.common.event.DomainEvent;
-import com.enki.domain.entity.BoardGame;
+import com.enki.domain.core.entity.BoardGame;
 import lombok.*;
 
 import java.time.ZoneId;
@@ -13,7 +13,7 @@ import java.time.ZonedDateTime;
 @ToString(callSuper = true)
 public class BoardGameEvent extends DomainEvent<BoardGame> {
 
-    public BoardGameEvent(AggregationRoot entity, ActionDomain action) {
+    public BoardGameEvent(BoardGame entity, ActionDomain action) {
         super(entity, action, ZonedDateTime.now(ZoneId.of("UTC")));
     }
 

@@ -1,7 +1,7 @@
-package com.enki.domain;
+package com.enki.domain.core;
 
-import com.enki.domain.entity.BoardGame;
-import com.enki.domain.event.BoardGameEvent;
+import com.enki.domain.core.event.BoardGameEvent;
+import com.enki.domain.core.entity.BoardGame;
 
 import java.util.List;
 

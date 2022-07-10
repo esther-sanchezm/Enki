@@ -1,7 +1,7 @@
-package com.enki.domain.entity;
+package com.enki.domain.core.entity;
 
 import com.enki.common.aggregationroot.AggregationRoot;
-import com.enki.domain.valueobject.Image;
+import com.enki.domain.core.valueobject.Image;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

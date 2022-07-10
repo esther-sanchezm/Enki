@@ -6,25 +6,20 @@
 
     <parent>
         <groupId>enki</groupId>
-        <artifactId>root</artifactId>
+        <artifactId>enki-domain</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>enki-application</artifactId>
+    <artifactId>enki-domain-service</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>enki</groupId>
-            <artifactId>enki-domain-service</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>enki-common</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-validation</artifactId>
+            <groupId>enki</groupId>
+            <artifactId>enki-domain-core</artifactId>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>

@@ -12,16 +12,31 @@
 
     <artifactId>enki-domain</artifactId>
 
-    <dependencies>
-        <dependency>
-            <groupId>enki</groupId>
-            <artifactId>enki-common</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <scope>provided</scope>
-        </dependency>
-    </dependencies>
+    <modules>
+        <module>enki-domain-core</module>
+        <module>enki-domain-service</module>
+    </modules>
+
+    <packaging>pom</packaging>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>enki</groupId>
+                <artifactId>enki-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>enki</groupId>
+                <artifactId>enki-domain-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>enki</groupId>
+                <artifactId>enki-domain-service</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>
